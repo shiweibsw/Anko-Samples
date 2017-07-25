@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.kd.anko">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -30,6 +31,9 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".SQLiteActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".IntentDetailsActivity"
             android:screenOrientation="portrait"/>
     </application>
 
