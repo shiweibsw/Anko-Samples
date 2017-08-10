@@ -5,7 +5,9 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import com.example.kd.anko.adapter.DialogsAdapter
 import kotlinx.android.synthetic.main.activity_dialogs.*
-import org.jetbrains.anko.*
+import org.jetbrains.anko.longToast
+import org.jetbrains.anko.progressDialog
+import org.jetbrains.anko.toast
 
 class DialogsActivity : AppCompatActivity() {
 
@@ -23,16 +25,16 @@ class DialogsActivity : AppCompatActivity() {
                     longToast("I'm a long toast")
                 }
                 2 -> {
-                    alert("Alert message", "Alert title") {
-                        positiveButton("Confirm") { dialog -> dialog.dismiss() }
-                        negativeButton("Cancel") { dialog -> dialog.dismiss() }
-                    }.show()
+//                    alert("Alert message", "Alert title") {
+//                        positiveButton("Confirm") { dialog -> dialog.dismiss() }
+//                        negativeButton("Cancel") { dialog -> dialog.dismiss() }
+//                    }.show()
                 }
                 3 -> {
-                    val langs = listOf("Kotlin", "Java", "Php", "Go")
-                    selector("Which language are you Learning?", langs, { dialogInterface, i ->
-                        toast("You have chosen ${langs[i]}")
-                    })
+//                    val langs = listOf("Kotlin", "Java", "Php", "Go")
+//                    selector("Which language are you Learning?", langs, { dialogInterface, i ->
+//                        toast("You have chosen ${langs[i]}")
+//                    })
                 }
                 4 -> {
                     val dialog = progressDialog(title = "Loading")
